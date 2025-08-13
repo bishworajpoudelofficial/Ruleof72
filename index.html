@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule of 72 Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button id="lang-en" class="lang-btn active">English</button>
+            <button id="lang-np" class="lang-btn">नेपाली</button>
+        </div>
+        
+        <div class="calculator-card">
+            <h1 id="title">Rule of 72 Calculator</h1>
+            <p id="description" class="description">Enter your amount and annual interest rate to find out how many years it will take to double your money.</p>
+            
+            <div class="input-group">
+                <label id="amount-label" for="amount">Amount ($)</label>
+                <input type="number" id="amount" placeholder="Enter amount" step="0.01" min="0.01">
+            </div>
+            
+            <div class="input-group">
+                <label id="rate-label" for="interest-rate">Annual Interest Rate (%)</label>
+                <input type="number" id="interest-rate" placeholder="Enter interest rate" step="0.01" min="0.01">
+            </div>
+            
+            <button id="calculate-btn">Calculate</button>
+            
+            <div id="result" class="result hidden"></div>
+            <div id="error" class="error hidden"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
