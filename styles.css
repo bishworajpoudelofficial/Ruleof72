@@ -57,6 +57,20 @@ body {
     text-align: center;
 }
 
+.logo-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 80px;
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+}
+
 h1 {
     color: #333;
     margin-bottom: 20px;
